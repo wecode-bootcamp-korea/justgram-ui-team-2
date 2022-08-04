@@ -1,0 +1,64 @@
+.to-do {
+    border: 1px solid #000;
+
+}
+.icon-image {
+    height: 32px;
+    width: 32px;
+}
+
+.custom-margin-left {
+    margin-left: 10px; 
+}
+.vertical-center {
+    display: flex;
+    align-items: center;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 0 100px; */
+    padding: 0 100px;
+}
+
+.header-text {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+}
+
+.contents-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.feed-container {
+    width: 700px;
+}
+
+.feed-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+}
+
+.feed-image{
+    height: 700px;
+}
+
+.feed-img{
+    height: 100%;
+    width: 100%;
+}
+
+.feed-menu {
+
+}
+
+.feed-comment {
+
+}

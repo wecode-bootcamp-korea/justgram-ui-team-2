@@ -53,7 +53,7 @@ function onInput(event) {
 idInput.addEventListener('input', onInput);
 pwInput.addEventListener('input', onInput);
 
-loginBtn.addEventListener("click", () => {
-    console.log('클릭')
-    // 로그인 했을 때 로직
+loginBtn.addEventListener("submit", (event) => {
+    event.preventDefault(); //해당 기능을 꺼버리고
+    // 커스텀 로직
 });
