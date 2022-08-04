@@ -53,6 +53,7 @@
     border: 1px;
     border-radius: 3px;
     border-color: gray;
+    outline: none;
   }
     /*button*/
   .button-container {
@@ -63,7 +64,6 @@
     justify-content: center;
   }
   .loginBtn{
-
     padding:9px 130px;
     border:1px;
     border-radius:3px;
@@ -72,16 +72,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  .loginBtnN{
-    padding:9px 130px;
-    border:1px;
-    border-radius:3px;
-    background-color:rgb(145, 211, 233);
-    color:white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    cursor:default;
   }
 
     /*empty part*/

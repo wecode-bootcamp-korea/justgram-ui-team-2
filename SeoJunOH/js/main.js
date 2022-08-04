@@ -1,13 +1,9 @@
-
 function addFeed() {
-    const config = {
-        method: "get"
-    };
-    fetch("https://gist.githubusercontent.com/Pi-ren/17b37d5294dab8219b043275319c236a/raw/6c1c81d63e623f95c0f67b82d3c1d21733c2fb4a/test.json", config)
-        .then(response => response.json())
+    fetch("https://gist.githubusercontent.com/Pi-ren/17b37d5294dab8219b043275319c236a/raw/6c1c81d63e623f95c0f67b82d3c1d21733c2fb4a/test.json",)
+        .then(res => res.json())
         .then(data => {
-
             for (let i = 0; i < data.feedIn.length; i++) {
+                
                 let feedIn = data.feedIn[i];
 
                 //1. Feed Header
@@ -18,33 +14,25 @@ function addFeed() {
                 const profile_name = document.createElement("h2");
                 profile_name.className = 'name';
                 profile_name.innerHTML = feedIn.name;
-
+                
                 const leftmenu = document.createElement('div');
                 leftmenu.className = 'leftmenu';
                 leftmenu.appendChild(profile_pic);
                 leftmenu.appendChild(profile_name);
-
+                
                 const dotmark = document.createElement('img');
                 dotmark.className = 'mark';
                 dotmark.src = data.dotmark;
 
-                const rightmenu = document.createElement('div');
-                rightmenu.className = 'rightmenu';
-                rightmenu.appendChild(dotmark);
-
                 const feedheader = document.createElement('div');
-                feedheader.className = 'feedheader';
+                feedheader.className = 'feedline';
                 feedheader.appendChild(leftmenu);
-                feedheader.appendChild(rightmenu);
+                feedheader.appendChild(dotmark);
 
-                //2.FeedPhoto
-                const showpic = document.createElement('img');
-                showpic.className = 'showpic';
-                showpic.src = feedIn.show_pic;
-
-                const feedphoto = document.createElement('div');
+                //2.Feedphoto
+                const feedphoto = document.createElement('img');
                 feedphoto.className = feedphoto;
-                feedphoto.appendChild(showpic);
+                feedphoto.src = feedIn.show_pic;
 
                 //3.Feedmenu
                 const heartmark = document.createElement('img');
@@ -60,7 +48,7 @@ function addFeed() {
                 outmark.src = data.outmark;
 
                 const leftmenu2 = document.createElement('div');
-                leftmenu2.className = 'leftmenu2';
+                leftmenu2.className = 'leftmenu';
                 leftmenu2.appendChild(heartmark);
                 leftmenu2.appendChild(commentmark);
                 leftmenu2.appendChild(outmark);
@@ -69,22 +57,19 @@ function addFeed() {
                 bookmark.className = 'mark';
                 bookmark.src = data.bookmark;
 
-                const rightmenu2 = document.createElement('div');
-                rightmenu2.className = 'rightmenu';
-                rightmenu2.appendChild(bookmark);
-
                 const feedmenu = document.createElement('div');
-                feedmenu.className = 'feedmenu';
+                feedmenu.className = 'feedline';
                 feedmenu.appendChild(leftmenu2)
-                feedmenu.appendChild(rightmenu2)
+                feedmenu.appendChild(bookmark)
 
-                //4.Feedcomment
-                const likes = document.createElement('h3');
+                //likes
+                const likes = document.createElement('p');
                 likes.className = 'likes';
                 likes.innerHTML = feedIn.likes;
 
+                //4.Feedcomment
                 const comment = document.createElement('h3');
-                comment.className = 'comment';
+                comment.className = ('comment' + i);
                 comment.innerHTML = feedIn.comment;
 
                 const incom = document.createElement('input');
@@ -96,34 +81,14 @@ function addFeed() {
                 incombtn.value = '1';
                 incombtn.innerHTML = "게시";
 
-                //댓글달기 부분 실험 시작
-                incom.addEventListener('keyup',function(){
-                    var keyCode = (window.Event) ? event.which : event.keyCode;
-                    if (keyCode == 13) {
-                        if (!(incom.value)) {} else {
-                            comment.innerHTML = incom.value;
-                            incom.value=null;
-                        }
-                    }
-                })
-                incombtn.addEventListener('click',function(){
-                    if (!(incom.value)) {} else {
-                        comment.innerHTML = incom.value;
-                        incom.value=null;
-                    }
-                })
-                //댓글달기 부분 실험 끝
-
-
-                const empty = document.createElement('div');
-                empty.appendChild(incom);
-                empty.appendChild(incombtn);
+                const write = document.createElement('div');
+                write.className="feedline";
+                write.appendChild(incom);
+                write.appendChild(incombtn);
 
                 const feedcomment = document.createElement('div');
                 feedcomment.className = 'feedcomment';
-                feedcomment.appendChild(likes)
                 feedcomment.appendChild(comment)
-                feedcomment.appendChild(empty)
 
                 //main feed
                 const feed = document.createElement("feed");
@@ -131,13 +96,49 @@ function addFeed() {
                 feed.appendChild(feedheader);
                 feed.appendChild(feedphoto);
                 feed.appendChild(feedmenu);
+                feed.appendChild(likes);
                 feed.appendChild(feedcomment);
+                feed.appendChild(write);
 
                 const main = document.getElementById("main");
                 main.className = "main";
                 main.appendChild(feed)
+
+                //댓글달기 부분 실험 시작
+                incom.addEventListener('keyup', function () {
+                    var keyCode = (window.Event) ? event.which : event.keyCode;
+                    if (keyCode == 13) {
+                        if (!(incom.value)) { } else {
+                            const newComment = document.createElement('h3');
+                            newComment.className = ('comment' + i);
+                            newComment.innerHTML = incom.value;
+                            feedcomment.appendChild(newComment);
+                            incom.value = null;
+                            //댓글이 3개초과시 삭제
+                            const commentthree = document.getElementsByClassName('comment' + i);
+                            if (commentthree.length == 4) {
+                                feedcomment.removeChild(commentthree[0])
+                            }
+                        }
+                    }
+                })
+                incombtn.addEventListener('click', function () {
+                    if (!(incom.value)) { } else {
+                        const newComment = document.createElement('h3');
+                        newComment.className = ('comment'+i);
+                        newComment.innerHTML = incom.value;
+                        feedcomment.appendChild(newComment);
+                        incom.value = null;
+                        //댓글이 3개초과시 삭제
+                        const commentthree = document.getElementsByClassName('comment'+i);
+                        if (commentthree.length == 4) {
+                            feedcomment.removeChild(commentthree[0])
+                        }
+                    }
+                })
             }
         })
         .catch(error => console.log("fetch error"));
 }
-addFeed();
+
+addFeed()
