@@ -32,7 +32,3 @@ function checkVaildInfo() {
 
 incomingData[0].addEventListener("input", checkVaildInfo);
 incomingData[1].addEventListener("input", checkVaildInfo);
-
-loginBtn.addEventListener("click", () => {
-  console.log("클릭됨");
-});
