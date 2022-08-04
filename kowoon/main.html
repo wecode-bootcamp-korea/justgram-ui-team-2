@@ -16,53 +16,113 @@
   <body>
     <div class="header-wrapper">
       <div clas="vertical-center">
-      <img class="icon-img" src="style/instagram.png" alt="camera" />
+      <img class="icon-img" src="style/instagram.png" alt="camera-icon" />
       <span class="logo-text">| Justgram</span>
     </div>
       <input class="search vertical-center" type="text"  placeholder="검색"></input>
       <div class="vertical-center">
-      <img class="icon-img" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
-      <img class="icon-img custom-margin-left" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
-      <img class="icon-img custom-margin-left" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />
+      <img class="icon-img" alt="나침반" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png"/>
+      <img class="icon-img custom-margin-left" alt="하트"  src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" />
+      <img class="icon-img custom-margin-left"  alt="사람" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" />
       
     </div>
     </div>
-   
+    <div class="flex-center">
       <div class="contents-wrapper"> 
-      <div class="feed-container">
-       <div class="feed-header">
-       <div class="vertical-center"><img alt=""/> 아이디 </div>
-       <div>...</div>
-       </div>
-       <div class="feed-image">
-        <img class="feed-my-img" src="style/20220801_163505.jpg"/>
-       </div>
-        <div class="feed-menu">
-        <div class="vertical-center">
+        <div class="feed-container">
+          <div class="feed-header">
+            <div class="vertical-center"><img alt=""/> kowoonlee </div>
+            <div>...</div>
+          </div>
+          <div class="feed-image">
+           <img class="feed-my-img" src="style/20220801_163505.jpg"/>
+          </div>
+          <div class="feed-menu padding-10">
           <div class="feed-icon">
-        
-          <img class="icon-img" src="style/heart.png"/>
-          <img class="icon-img" src="style/chat.png" />
-          <img class="icon-img" src="style/upload.png"/>
-  
-          <img class="bookmark icon-img" src="style/bookmark.png"/>
+          <img class="icon-img"  alt="하트" src="style/heart.png"/>
+          <img class="icon-img" alt="말풍선"  src="style/chat.png" />
+          <img class="icon-img" alt="업로드" src="style/upload.png"/>
+          <img class="bookmark icon-img" alt="책갈피" src="style/bookmark.png"/>
          </div>
       </div>
-      </div>
+
        <div class="feed-comment">
-          <div>ainworld님 외 10명이 좋아합니다.</div>
-          <div>
+          <div class="feed-comment-like padiing-10">ainworld님 외 10명이 좋아합니다.</div>
+          <div class="feed-comment-list  padiing-10">
+            <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
             <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
             <div>neceosecius 거봐 좋았잖아~~~~~</div>
-            <div>42분전</div>
           </div>
+          <div>42분전</div>
+           <div class="feed-comment-write padiing-10">
+             <input class="commentinput" type="text" placeholder="댓글 달기..." />
+             <button class="commentbutton" type="button">게시</button>
+           </div>
+         </div>
+        </div> 
+        <div class="feed-container">
+          <div class="feed-header">
+            <div class="vertical-center"><img alt=""/> kowoonlee </div>
+            <div>...</div>
           </div>
-       <div class="instabottom">
-       <input class="commentinput" type="text"  placeholder="댓글 달기..."></input>
-       <button class="commentbutton" type="button">게시</button>
+          <div class="feed-image">
+           <img class="feed-my-img" src="style/20220801_163505.jpg"/>
+          </div>
+          <div class="feed-menu padding-10">
+          <div class="feed-icon">
+          <img class="icon-img"  alt="하트" src="style/heart.png"/>
+          <img class="icon-img" alt="말풍선"  src="style/chat.png" />
+          <img class="icon-img" alt="업로드" src="style/upload.png"/>
+          <img class="bookmark icon-img" alt="책갈피" src="style/bookmark.png"/>
+         </div>
+         </div>
+       <div class="feed-comment">
+          <div class="feed-comment-like padiing-10">ainworld님 외 10명이 좋아합니다.</div>
+          <div class="feed-comment-list  padiing-10">
+            <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
+            <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
+            <div>neceosecius 거봐 좋았잖아~~~~~</div>
+          </div>
+          <div>42분전</div>
+           <div class="feed-comment-write padiing-10">
+             <input class="commentinput" type="text" onchange="printName()" placeholder="댓글 달기..."></input>
+             <button class="commentbutton" type="button">게시</button>
+           </div>  
+        </div>
+        </div> 
+        <div class="feed-container">
+        <div class="feed-header">
+          <div class="vertical-center"><img alt=""/> kowoonlee </div>
+          <div>...</div>
+        </div>
+        <div class="feed-image">
+         <img class="feed-my-img" src="style/20220801_163505.jpg"/>
+        </div>
+        <div class="feed-menu padding-10">
+        <div class="feed-icon">
+        <img class="icon-img"  alt="하트" src="style/heart.png"/>
+        <img class="icon-img" alt="말풍선"  src="style/chat.png" />
+        <img class="icon-img" alt="업로드" src="style/upload.png"/>
+        <img class="bookmark icon-img" alt="책갈피" src="style/bookmark.png"/>
+       </div>
+       </div>
+     <div class="feed-comment">
+        <div class="feed-comment-like padiing-10">ainworld님 외 10명이 좋아합니다.</div>
+        <div class="feed-comment-list  padiing-10">
+          <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
+          <div>canon_mj 위워크에서 진행한 베이킹 클래스...더보기</div>
+          <div>neceosecius 거봐 좋았잖아~~~~~</div>
+        </div>
+        <div>42분전</div>
+         <div class="feed-comment-write padiing-10">
+           <input class="commentinput" type="text" onchange="printName()" placeholder="댓글 달기..."></input>
+           <button class="commentbutton" type="button">게시</button>
+         </div>  
       </div>
+        </div>
       </div>
-    </div>
-   </div>
+    </div> 
+   <script src="js/main.js"></script>
   </body>
 </html>
+

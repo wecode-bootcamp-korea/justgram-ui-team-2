@@ -1,7 +1,10 @@
 .contents-wrapper {
   margin-top: 80px;
-  width: 500px;
-  margin: 80px auto;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-img {
@@ -19,27 +22,36 @@
 }
 
 .header-wrapper {
-  padding: 0 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: 1px solid gray;
+  padding: 0 100px;
 }
 
 .logo-text {
   font-family: "Lobster", cursive;
   font-size: 30px;
 }
+
+.contents-wrapper {
+  margin-top: 80px;
+}
+
 .feed-container {
-  align-items: center;
-  justify-content: center;
+  border: 1px solid gray;
+  width: 500px;
+  margin-bottom: 10px;
 }
 
 .feed-header {
   display: flex;
+  height: 30px;
+  border: 1px solid gray;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding-right: 10px;
 }
 
 .feed-image {
@@ -53,23 +65,16 @@
   width: 100%;
 }
 .feed-menu {
-  justify-content: space-between;
-}
-.feed-comment {
-  border: 1px solid black;
-  height: 75px;
-}
-.instabottom {
-  border: 1px solid black;
-  align-items: center;
-  height: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 10px;
 }
+.feed-comment {
+}
+
 .commentinput {
-  border: none;
-  margin-left: 10px;
+  flex: 1;
 }
 .commentbutton {
   margin-right: 10px;
@@ -78,6 +83,21 @@
   background-color: white;
 }
 
-.bookmark {
-  margin-right: 0px;
+.feed-comment-write {
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-name {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.feed-comment-write {
+  display: flex;
+  flex-direction: row;
 }
