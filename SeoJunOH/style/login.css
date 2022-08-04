@@ -1,0 +1,101 @@
+ 
+  body {
+    background-color: white;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 380px;
+    margin: 200px auto;
+    background-color: white;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+  }
+
+    /*logo*/
+  .logo-container {
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    background-color: white;
+  }
+  @font-face {
+    src: url("../data/font/Lobster/Lobster-Regular.ttf");
+    font-family:"hFont";
+  }
+  h1{
+    font-family:"hFont";
+    text-align:center;
+    padding: 10px;
+  }
+    /*login*/
+  .id-container{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    text-align:center;
+  }
+  .password-container{
+    width: 100%;
+    height: 12%;
+    background-color: white;
+    text-align:center;
+  }
+  input{
+    height: 40px;
+    width: 300px;
+    background-color: rgb(233, 233, 233);
+    margin: 5px auto;
+    font-size: 12px;
+    border: 1px;
+    border-radius: 3px;
+    border-color: gray;
+  }
+    /*button*/
+  .button-container {
+    display: flex;
+    height:15%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .loginBtn{
+
+    padding:9px 130px;
+    border:1px;
+    border-radius:3px;
+    background-color:lightblue;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .loginBtnN{
+    padding:9px 130px;
+    border:1px;
+    border-radius:3px;
+    background-color:rgb(145, 211, 233);
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+    /*empty part*/
+  .empty-container {
+    height:26%;
+    background-color:white;
+  }
+    /*question*/
+  .question-container{
+    height:10%;
+    background-color:white;
+    text-align: center;
+    color:darkblue;
+  }
+  h2{
+    font-size: 12px;
+  }
