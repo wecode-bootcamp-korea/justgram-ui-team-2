@@ -1,0 +1,38 @@
+
+{
+   "dotmark": "../data/image/more.png",
+   "heartmark": "https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png",
+   "commentmark": "../data/image/speech-bubble.png",
+   "outmark": "../data/image/export.png",
+   
+   
+
+
+   "bookmark": "../data/image/bookmark.png",
+   "feedIn": [
+      {
+         "id": 1,
+         "profile_pic": "../data/image/test1.jpg",
+         "show_pic": "../data/image/test1.jpg",
+         "name": "SeoJun OH",
+         "likes": "아따 좋아한다니께",
+         "comment": "아싸라비아콜롬비아"
+      },
+      {
+         "id": 2,
+         "profile_pic": "../data/image/test1.jpg",
+         "show_pic": "../data/image/test2.jpg",
+         "name": "Asta",
+         "likes": "하트눌러봐",
+         "comment": "포항사람은 포항항하고 웃지"
+      },      
+      {
+         "id": 3,
+         "profile_pic": "../data/image/test1.jpg",
+         "show_pic": "../data/image/test3.jpg",
+         "name": "Tesss",
+         "likes": "좋아해?",
+         "comment": "또로롱"
+      }
+   ]
+}

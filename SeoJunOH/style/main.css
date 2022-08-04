@@ -1,0 +1,129 @@
+body {
+    display:flex;
+    height : 2300px;
+    flex-direction: column;
+    background-color: white;
+    margin:0;
+}
+
+.header {
+    display: flex;
+    flex: column;
+    background-color: white;
+    height:100px;
+    width:100%;
+    flex-direction: row;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    justify-content: center;
+}
+.header_mark{
+    padding: 30px;
+    padding-right : 10px;
+}
+h1{
+    font-family:"hFont";
+    text-align:center;
+    font-size:35px;
+  }
+.header_side{
+    padding :30px;
+    margin-left:230px;
+
+}
+
+.main{
+    padding:100px;
+    margin: 0px auto;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.feed{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+    width:500px;
+    padding-top:30px;
+}
+.feedline{
+    display:flex;
+    flex-direction: row;
+    background-color:white;
+    width:500px;
+    justify-content:space-between;
+    padding-top:10px;
+}
+.profile_pic{
+    height:50px;
+    width:50px;
+    border:1px;
+    border-radius: 50px;
+}
+h2{
+    font-size:15px;
+    margin-left : 10px;
+}
+.feedphoto{
+    width: 500px;
+}
+.leftmenu{
+    display: flex;
+    flex-direction: row;
+    text-align:start;
+    background-color: white;
+}
+.feedcomment{
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    background-color: white;
+    padding-left: 4px;
+}
+.likes{
+    font-size:10px;
+    margin : 10px;
+}
+
+.incom{
+    margin:0px;
+    text-align: left;
+    outline: none;
+}
+input{
+    width:450px;
+    border:1px;
+    border-radius: 3px;
+    border-color: white;
+    justify-content: left;
+    padding-top: 0px auto;
+}
+button{
+    width: 50px;
+    background-color: white;
+    border: 1px;
+    border-color: lightgray;
+    justify-content: right;
+    cursor:pointer;
+}
+
+h3{
+    font-size:12px;
+}
+
+/*img size*/
+.mark{
+    height:30px;
+    width:30px;
+    padding:5px;
+}
+
+/*fonts*/
+@font-face {
+    src: url("../data/font/Lobster/Lobster-Regular.ttf");
+    font-family:"hFont";
+  }
+
