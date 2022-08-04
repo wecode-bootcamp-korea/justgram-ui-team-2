@@ -1,0 +1,83 @@
+.contents-wrapper {
+  margin-top: 80px;
+  width: 500px;
+  margin: 80px auto;
+}
+
+.icon-img {
+  width: 32px;
+  height: 32px;
+}
+
+.custom-margin-left {
+  margin-left: 10px;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-family: "Lobster", cursive;
+  font-size: 30px;
+}
+.feed-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.feed-image {
+  height: 500px;
+}
+.feed-my-img {
+  width: 100%;
+  height: 100%;
+}
+.feed-icon {
+  width: 100%;
+}
+.feed-menu {
+  justify-content: space-between;
+}
+.feed-comment {
+  border: 1px solid black;
+  height: 75px;
+}
+.instabottom {
+  border: 1px solid black;
+  align-items: center;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.commentinput {
+  border: none;
+  margin-left: 10px;
+}
+.commentbutton {
+  margin-right: 10px;
+  color: skyblue;
+  border: none;
+  background-color: white;
+}
+
+.bookmark {
+  margin-right: 0px;
+}
