@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Instagram</title>
+    <link href="style/common.css" rel="stylesheet" type="text/css" />
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="instagram-icon" href="img/favicon.png">
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="nav-1">
+            <!-- <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/logo.png" alt="logo_img">
+            <div class="vl"></div> -->
+            <img class="logo_instagram_txt" src="img/logo_text.png" alt="logo_text">
+        </div>
+        <input id="searchInput" type="search" class="input-search" placeholder="검색">
+        <div class="nav-2">
+          <img src="img/home.png" alt="홈">
+          <img src="img/dm.png" alt="DM">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/explore.png" alt="탐색">
+          <img src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+          <img class="pic" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/profile.png" alt="마이페이지">
+        </div>
+      </div>
+      
+    </nav>
+    <!-- main -->
+    <main>
+      <div class="feeds">
+        <!-- article -->
+        <article>
+          <header>
+            <div class="profile-of-article">
+              <img class="img-profile pic" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202006%2F20200623160459293.jpg" alt="d_a___m_i
+              님의 프로필 사진">
+              <span class="userID main-id point-span">d_a___m_i
+              </span>
+            </div>
+            <img class="icon-react icon-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+          </header>
+          <div class="main-image">
+            <img src="https://images.unsplash.com/photo-1659369016472-5e52b8e5e008?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="d_a___m_i
+            님의 피드 사진" class="mainPic">
+          </div>
+          <div class="icons-react">
+            <div class="icons-left">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="말풍선">
+              <img class="icon-react" src="img/dm.png" alt="DM">  
+            </div>
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크">
+          </div>
+          <!-- article text data -->
+          <div class="reaction">
+            <div class="liked-people">
+              <img class="pic" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202207%2F20220715142503516.jpg" alt="yswhtlr님의 프로필 사진">
+              <p><span class="point-span">jico</span>님 <span class="point-span">외 2,555,851명</span>이 좋아합니다</p>
+            </div>
+            <div class="description">
+              <p><span class="point-span userID">d_a___m_i
+              </span><span class="at-tag">@wkorea @fendi</span> 🌱</p>
+            </div>
+            <div class="comment-section">
+              <ul class="comments">
+                <li>
+                  <span><span class="point-span userID">xxxgdragon</span>다미다미 이쁘다미</span>
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="img/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
+                </li>
+                <!-- input 값 여기에 추가 -->
+              </ul>
+              <div class="time-log">
+                <span>32분 전</span>
+              </div>
+            </div>
+          </div>
+          <div class="hl"></div>
+          <div class="comment">
+            <input id="input-comment" class="input-comment" type="text" placeholder="댓글 달기..." >
+            <button type="submit" class="submit-comment" disabled>게시</button>
+          </div>
+        </article>
+        <article>
+          <header>
+            <div class="profile-of-article">
+              <img class="img-profile pic" src="https://search.pstatic.net/common?type=b&size=144&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202204%2F20220404103204357.jpg" alt="thisisyourhyung님의 프로필 사진">
+              <span class="userID main-id point-span">xxxgdragon</span>
+            </div>
+            <img class="icon-react icon-more" src="https://search.pstatic.net/common?type=b&size=144&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202204%2F20220404103204357.jpg" alt="more">
+          </header>
+          <div class="main-image">
+            <img src="https://images.unsplash.com/photo-1658567984767-9f5c609bbddd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDc0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="thisisyourhyung님의 피드 사진" class="mainPic">
+          </div>
+          <div class="icons-react">
+            <div class="icons-left">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+              <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/comment.png" alt="말풍선">
+              <img class="icon-react" src="img/dm.png" alt="DM">  
+            </div>
+            <img class="icon-react" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/bookmark.png" alt="북마크">
+          </div>
+          <!-- article text data -->
+          <div class="reaction">
+            <div class="liked-people">
+              <img class="pic" src="https://search.pstatic.net/common?type=b&size=144&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202204%2F20220404103204357.jpg" alt="_jeongjaehyun님의 프로필 사진">
+              <p><span class="point-span">_ystlr</span>님 <span class="point-span">외 6,688,112명</span>이 좋아합니다</p>
+            </div>
+            <div class="description">
+              <p><span class="point-span userID">xxxgdragon</span>영원한 건 절대 없어! 어차피 넌! 변했지!
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+              </head>
+              <body>
+                
+              </body>
+              </html></p>
+            </div>
+            <div class="comment-section">
+              <ul class="comments">
+                <li>
+                  <span><span class="point-span userID">daesung</span>gd형! 같이가!</span>
+                  <div>
+                    <img class="comment-more" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/more.png" alt="more">
+                    <div class="comment-like">
+                      <img class="comment-heart" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/bearu/heart.png" alt="하트">
+                      <img class="comment-heart-liked" src="img/liked.png" alt="좋아요된하트">
+                    </div>
+                  </div>
+                </li>
+                <!-- input 값 여기에 추가 -->
+              </ul>
+              <div class="time-log">
+                <span>1시간 전</span>
+              </div>
+            </div>
+          </div>
+          <div class="hl"></div>
+          <div class="comment">
+            <input id="input-comment2" class="input-comment" type="text" placeholder="댓글 달기..." >
+            <button type="submit" class="submit-comment" disabled>게시</button>
+          </div>
+        </article>
+
+      </div>
+      <!-- main-right -->
+      <div class="main-right">
+        <div class="myProfile">
+          <img class="pic" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202003%2F20200310125523968.jpg" alt="bn_sj2013님의 프로필 사진">
+          <div>
+            <span class="userID point-span">mr.park</span>
+            <span class="sub-span">bn_sj2013</span>  
+          </div>
+        </div>
+        <!-- story section -->
+        <div class="section-story">
+          <div class="menu-title">
+            <span class="sub-title">스토리</span>
+            <span class="find-more">모두 보기</span>
+          </div>
+          <ul class="story-list">
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F201911%2F20191111162806970-8759926.jpg" alt="wecode_bootcamp님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">dntlrdl</span>
+                <span class="sub-span">18분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="https://search.pstatic.net/common?type=b&size=216&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202206%2F20220602002828773.jpg" alt="han_ye_seul님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">V</span>
+                <span class="sub-span">58분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F136%2F202101041452466591.jpg" alt="dntlrdl님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">PARK EUNBIN</span>
+                <span class="sub-span">25분 전</span>  
+              </div>
+            </li>
+            <li>
+              <div class="gradient-wrap">
+                <img class="img-profile story" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202006%2F20200619172124928.jpg" alt="i_icaruswalks님의 프로필 사진">
+              </div>
+              <div class="profile-text">
+                <span class="userID point-span">hi_songjoongki</span>
+                <span class="sub-span">28분 전</span>  
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- recommendation section -->
+        <div class="section-recommend">
+          <div class="menu-title">
+            <span class="sub-title">회원님을 위한 추천</span>
+            <span class="find-more">모두 보기</span>
+          </div>
+          <ul class="recommend-list">
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2F109%2F20160817171907291.jpeg" alt="renebaebae님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">skawngur</span>
+                  <span class="sub-span">younsik님 외 2명이 팔로우합니다</span>
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="https://search.pstatic.net/common?type=b&size=216&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202203%2F20220307140537732.jpg" alt="_jeongjaehyun님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">kimtaeri_official</span>
+                  <span class="sub-span">whtys님이 팔로우합니다</span>  
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+            <li>
+              <div class="recommend-friend-profile">
+                <img class="img-profile" src="https://search.pstatic.net/common?type=b&size=144&expire=1&refresh=true&quality=100&direct=true&src=http%3A%2F%2Fsstatic.naver.net%2Fpeople%2Fportrait%2F202010%2F20201001130713232.jpg" alt="leehi_hi님의 프로필 사진">
+                <div class="profile-text">
+                  <span class="userID point-span">jennierubyjane</span>
+                  <span class="sub-span">sfawa님 외 5명이 팔로우합...</span>  
+                </div>
+              </div>
+              <span class="btn-follow">팔로우</span>
+            </li>
+          </ul>
+        </div>
+        <footer>
+          <p class="insta-sccript">
+            소개 ∙ 도움말 ∙ 홍보 센터 ∙ API ∙ 채용 정보 ∙ 개인정보처리방침 ∙ <br>약관 ∙ 위치 ∙ 인기계정 ∙ 해시태그 ∙ 언어
+            <br><br>
+            © 2022 INSTAGRAM FROM FACEBOOK
+          </p>
+        </footer>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
