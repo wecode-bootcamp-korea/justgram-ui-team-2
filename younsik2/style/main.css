@@ -79,10 +79,12 @@ nav img {
     text-indent: 10%;
     font-size: 14px;
 }
+
 .input-search:focus {
     background-position: 4% center;
     outline: none;
-    }
+}
+
 .input-search::placeholder, .input-search:not(:focus) {
     text-align: center;
     vertical-align: center;
@@ -90,9 +92,11 @@ nav img {
     font-size: 14px;
     color: #8e8e8e;
 }
+
 .input-search:focus::placeholder {
     text-align: start;
 }
+
 .input-search::-webkit-search-cancel-button {
     -webkit-appearance: none;
     height: 14px;
@@ -106,7 +110,7 @@ nav img {
 .my-menu {  
     /* dropdown은 absolute로 뿌려줘야 하므로 부모를 position: relative로 잡아준다 */
     position: relative;
-    }
+}
     
 .my-menu .avatar:hover::after,
 .my-menu .avatar.is-active::after {
@@ -197,36 +201,43 @@ padding: 10px 15px 0 15px;
 border-top: 1px solid #dbdbdb;
 }
 /* main */
+
 main {
     width: 960px;
     margin: 0 auto;
     padding-top: 94px;
     padding-bottom: 40px;
 }
+
 .main-right {
     width: 310px;
     display: inline-block;
     position: fixed;
     top: 94px;
 }
+
 .feeds {
     width: 614px;
     margin-right: 34px;
     display: inline-block;
 }
+
 article, .section-story, .section-recommend {
     background-color: #fff;
     border-radius: 3px;
     border: 1px solid #DBDBDB;
 }
+
 article {
     margin-bottom: 60px;
 }
+
 .section-story, .section-recommend {
     width: 310px;
     padding: 14px 16px;
     overflow-y: hidden;
 }
+
 .section-story {
     height: 212px;
     margin-bottom: 20px;
