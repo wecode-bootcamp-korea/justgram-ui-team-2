@@ -23,6 +23,7 @@
 
 */
 
+const loginForm = document.getElementById('lgoin-form');
 const idInput = document.getElementById('id-input');
 const pwInput = document.getElementById('pw-input');
 const loginBtn = document.getElementById('login-btn');
@@ -53,7 +54,7 @@ function onInput(event) {
 idInput.addEventListener('input', onInput);
 pwInput.addEventListener('input', onInput);
 
-loginBtn.addEventListener("submit", (event) => {
+loginForm.addEventListener("submit", (event) => {
     event.preventDefault(); //해당 기능을 꺼버리고
     // 커스텀 로직
 });
