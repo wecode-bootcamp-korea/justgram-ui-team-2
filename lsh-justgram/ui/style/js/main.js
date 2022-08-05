@@ -5,33 +5,33 @@ const commentBtn = document.getElementsByClassName("add-comment-btn");
 console.log(commentInput);
 console.log(commentBtn);
 
-// const commentInputArray = Array.from(commentInput);
-// const commentBtnArray = Array.from(commentBtn);
+const commentInputArray = Array.from(commentInput);
+const commentBtnArray = Array.from(commentBtn);
 
-// console.log(commentInputArray);
-// console.log(commentBtnArray);
+console.log(commentInputArray);
+console.log(commentBtnArray);
 
 // 함수
 
-function isEnter(event) {
-  if (event.keyCode == "13") {
-  }
-}
+// function isEnter(event) {
+//   if (event.keyCode == "13") {
+//   }
+// }
 
 function writeComment(event) {
-  const content = document.createElement("div");
-  //Array.forEach(element) => {
+  commentInput.forEach(commentInput.value, index) {
+  
   const newUsername = document.createElement("span");
   const newContent = document.createElement("span");
-  const newLike = document.createElement("button");
-
+  const content = document.createElement("div");
+  
   newUsername = "user";
   newContent = commentInput.value;
 
   document.body.append(newUsername, "username");
   document.body.append(newContent); //콘텐츠 내용
   document.body.append(newLike);
-  //}
+  }
 }
 
 // 이벤트
