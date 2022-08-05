@@ -1,50 +1,22 @@
 // 변수
 const commentInput = document.getElementsByClassName("add-comment-input");
 const commentBtn = document.getElementsByClassName("add-comment-btn");
+const commentList = document.getElementsByClassName("comment-list");
 
-console.log(commentInput);
-console.log(commentBtn);
+Array.from(commentBtn).forEach((button, index) => {
+  button.addEventListener("click", () => {
+    const commentText = commentInput[index].value;
 
-const commentInputArray = Array.from(commentInput);
-const commentBtnArray = Array.from(commentBtn);
+    const newComment = document.createElement("div");
+    const commentName = document.createElement("span");
+    const commentValue = document.createElement("span");
 
-console.log(commentInputArray);
-console.log(commentBtnArray);
+    commentName.textContent = "username";
+    commentName.className = "bold";
+    commentValue.textContent = commentText;
 
-// 함수
-
-// function isEnter(event) {
-//   if (event.keyCode == "13") {
-//   }
-// }
-
-function writeComment(event) {
-  commentInput.forEach(commentInput.value, index) {
-  
-  const newUsername = document.createElement("span");
-  const newContent = document.createElement("span");
-  const content = document.createElement("div");
-  
-  newUsername = "user";
-  newContent = commentInput.value;
-
-  document.body.append(newUsername, "username");
-  document.body.append(newContent); //콘텐츠 내용
-  document.body.append(newLike);
-  }
-}
-
-// 이벤트
-commentInput.addEventListener("keydown", (event) => writeComment(event));
-commentBtn.addEventListener("click", (event) => writeComment(event));
-
-// commentInput.addEventListener("enter", writeComment);
-// commentBtn.addEventListener("click", writeComment);
-
-// <button type="button" class="transparent-btn">
-//         <img
-//           src="https://cdn-icons-png.flaticon.com/512/2107/2107845.png"
-//           alt="코멘트좋아요"
-//           class="comment-like-btn"
-//         />
-//       </button>
+    newComment.append(commentName, commentValue);
+    commentList[index].append(newComment);
+    commentInput[index].value = "";
+  });
+});
