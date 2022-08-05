@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+}
+
+html.body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 48px;
+}
+
+.logo-box {
+  padding-block: 50px;
+}
+
+.input-box {
+  width: 300px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  background-color: #e9ecee;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 6px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.login-button {
+  border-radius: 6px;
+  background-color: #b9d9f9;
+  width: 300px;
+  padding: 7px;
+  border: 0;
+  color: white;
+  font-size: 14px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extra-box {
+  padding-top: 150px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
