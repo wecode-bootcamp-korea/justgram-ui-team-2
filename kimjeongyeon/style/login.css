@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    height: 100%;
+}
+
+.login-container {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.flex-center { /*공통*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    padding: 30px;
+}
+
+.logo-text {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+}
+
+.form-wrapper {
+    /* border: 1px solid #000; */
+}
+
+.login-wrapper { /* input말고 div에 border준다 */
+    border: 1px solid #ddd;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login-input {
+    border: none;
+    width: 100%; /* 부모의 넓이값 따라감 */
+    margin: 10px;
+    font-size: 16px;
+}
+
+.login-input:focus {  /**/
+    outline: none;
+}
+.button-wrapper { /* input말고 div에 border준다 */
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  
+}
+
+.login-button {
+    background-color: #0095f6;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: not-allowed;
+}
+
+.extra-wrapper {
+    /* border: 1px solid #000; */
+    padding-top: 70px;
+    padding-bottom: 10px;
+
+}
+
+.find-password {
+    color:#00376b;
+}
+
+/*
+    큰 컴포넌트 나눈다
+    로고 인풋 넣기
+    큰레이아웃 - style 순서
+
+    내가 놓친 부분 - 공통 클래스 넣어주는거
+*/
